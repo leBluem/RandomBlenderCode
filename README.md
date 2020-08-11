@@ -3,7 +3,7 @@
 ```
 # this is for blender console mostly (Shift+F4)
 # i dont  know howto do it without 'if True:'
-# if not mentioned otherwise use snippets in object mode) 
+# if not mentioned otherwise: code snippets are for object mode
 ```
 
 ## Count
