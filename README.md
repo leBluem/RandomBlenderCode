@@ -70,4 +70,20 @@ for o in objs:
       normals.append(v.normal)
   # make csn's all face up.
   me.normals_split_custom_set_from_vertices(normals)
+```
 
+## ac-coordinates
+ - usefull for AssettoCorsa animation makers
+ - print object's (Pivot-)position from blender world-pos (origin center of mass surface)
+```
+import bpy
+for ob in bpy.context.selected_objects:
+  ss=str(ob.matrix_world.to_translation()).replace('<Vector (','')
+  ss=ss.replace(')>','')
+  ss=ss.replace(' ','')
+  sss = ss.split(',')
+  print('PIVOT_POS='
+      +str(round(float(sss[0])*100.0, 4) )+', '
+      +str(round(float(sss[2])*100, 4) ) + ', '
+      +str(round(float(sss[1])*(-100.0), 4) ) + '  ;' + ob.name )
+```
