@@ -44,3 +44,30 @@ if True:
   print(str(i-start) + ' objects renamed')
 #end script
 ```
+
+## All normals up
+ - for Assetto Corsa trees, grass, skyboxes
+ - if you dont want/cant use naming conventions to make nice tree shadows
+ - makes normals for all for all selected vertices pointing upwards
+```
+# quirky note: you have to select all vertices in edit mode before 
+ä but snippet works in object mode only
+```
+```
+import bpy
+objs = bpy.context.selected_objects
+for o in objs:
+  me = o.data
+  me.use_auto_smooth = True
+  # Normal custom verts on each axis
+  me.normals_split_custom_set([(0, 0, 0) for l in me.loops])
+  # Set normal for selected vertices
+  normals = []
+  for v in me.vertices:
+    if v.select:
+      normals.append((0, 1, 0))
+    else:
+      normals.append(v.normal)
+  # make csn's all face up.
+  me.normals_split_custom_set_from_vertices(normals)
+
