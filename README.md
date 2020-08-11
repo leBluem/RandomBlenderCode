@@ -15,7 +15,7 @@ import bpy
 if True:
   cVerts,cAll,i=0,0,0
   for m in [o.data for o in bpy.context.selected_objects if o.type == 'MESH']:
-    ob.data.name = ob.name
+    o.data.name = o.name
     cVerts = len(m.vertices)
     if cVerts>=60000:
       print(str(cVerts) + ' vertices for object: ' + str(m.name))
