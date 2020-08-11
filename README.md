@@ -1,7 +1,7 @@
 # RandomBlenderCode
 
 ```
-# this is meant to be copied, modified to your needs (in an extrenal editor maybe)
+# this is meant to be copied, modified to your needs (in an external editor maybe)
 # then pasted into blender console mostly (Shift+F4)
 # i dont  know howto do it without 'if True:'
 # if not mentioned otherwise: code snippets are for object mode
