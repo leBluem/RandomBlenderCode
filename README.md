@@ -22,7 +22,6 @@ if True:
     cAll = cAll + cVerts
     i=i+1
   print(str(i) + ' objects - ' + str(cAll) + ' vertices total')
-#end script
 ```
 
 ## Rename
@@ -43,7 +42,6 @@ if True:
       ob.data.name=ob.name
     print(ob.name)
   print(str(i-start) + ' objects renamed')
-#end script
 ```
 
 ## All normals up
@@ -52,7 +50,7 @@ if True:
  - makes normals for all selected objects (see #quirky note) pointing upwards
 ```
 # quirky note: you have to select all vertices in edit mode before 
-# but snippet works in object mode only
+# but the snippet itself works in object mode only
 ```
 ```
 import bpy
