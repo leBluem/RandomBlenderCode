@@ -74,7 +74,7 @@ for o in objs:
 
 ## ac-coordinates
  - usefull for AssettoCorsa animation makers
- - print object's (Pivot-)position from blender world-pos (origin center of mass surface)
+ - calc+print object's (Pivot-)position from blender world-pos (origin center of mass surface)
 ```
 import bpy
 for ob in bpy.context.selected_objects:
