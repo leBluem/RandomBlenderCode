@@ -3,10 +3,11 @@
 ```
 # this is for blender console mostly (Shift+F4)
 # i dont  know howto do it without 'if True:'
+# if not mentioned otherwise use snippets in object mode) 
 ```
 
 ## Count
- - count objects/vertices, print obj if > 60.000
+ - count selected objects and their vertices, print obj if > 60.000
  - also rename obj.data to meshname
 ```
 import bpy
@@ -24,7 +25,7 @@ if True:
 ```
 
 ## Rename
- - rename selected to "prefix+number+postfix"
+ - rename selected objects to "prefix+number+postfix"
  - set number i to start at whatever
  - also rename obj.data to meshname
 ```
