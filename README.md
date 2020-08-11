@@ -32,7 +32,7 @@ import bpy
 if True:
   i=100
   prefix='prefix_'
-  prefix='_postfix'
+  postfix='_postfix'
   start=i
   for ob in bpy.context.selected_objects:
     ob.name=prefix+str(i)+postfix
