@@ -51,7 +51,7 @@ if True:
  - makes normals for all for all selected vertices pointing upwards
 ```
 # quirky note: you have to select all vertices in edit mode before 
-ä but snippet works in object mode only
+# but snippet works in object mode only
 ```
 ```
 import bpy
