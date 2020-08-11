@@ -8,7 +8,7 @@
 
 ## Count
  - count selected objects and their vertices, print obj if > 60.000
- - also rename obj.data to meshname
+ - also rename obj.data.name to obj.name
 ```
 import bpy
 if True:
@@ -27,7 +27,7 @@ if True:
 ## Rename
  - rename selected objects to "prefix+number+postfix"
  - set number i to start at whatever
- - also rename obj.data to meshname
+ - also rename obj.data.name to obj.name
 ```
 import bpy
 if True:
