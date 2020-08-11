@@ -49,7 +49,7 @@ if True:
 ## All normals up
  - for Assetto Corsa trees, grass, skyboxes
  - if you dont want/cant use naming conventions to make nice tree shadows
- - makes normals for all for all selected vertices pointing upwards
+ - makes normals for all selected objects (see #quirky note) pointing upwards
 ```
 # quirky note: you have to select all vertices in edit mode before 
 # but snippet works in object mode only
