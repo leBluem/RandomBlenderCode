@@ -47,7 +47,7 @@ if True:
 ## All normals up
  - for Assetto Corsa trees, grass, skyboxes
  - if you dont want/cant use naming conventions to make nice tree shadows
- - makes normals for all selected objects (see #quirky note) pointing upwards
+ - makes normals for all selected objects pointing upwards
 ```
 # quirky note: you have to select all vertices in edit mode before 
 # but the snippet itself works in object mode only
@@ -63,10 +63,7 @@ for o in objs:
   # Set normal for selected vertices
   normals = []
   for v in me.vertices:
-    if v.select:
-      normals.append((0, 1, 0))
-    else:
-      normals.append(v.normal)
+    normals.append((0, 1, 0))
   # make csn's all face up.
   me.normals_split_custom_set_from_vertices(normals)
 ```
