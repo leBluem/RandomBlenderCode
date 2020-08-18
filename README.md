@@ -8,24 +8,6 @@
 # if not mentioned otherwise: code snippets are for object mode
 ```
 
-## trees, grass, skyboxes, point normals up for all selected objects
- - if you can't/dont want to use kunos naming scheme for better tree shadows
-```
-import bpy
-objs = bpy.context.selected_objects
-for o in objs:
-  me = o.data
-  me.use_auto_smooth = True
-  # Normal custom verts on each axis
-  me.normals_split_custom_set([(0, 0, 0) for l in me.loops])
-  # Set normal for selected vertices
-  normals = []
-  for v in me.vertices:
-    normals.append((0, 1, 0))
-  # make csn's all face up.
-  me.normals_split_custom_set_from_vertices(normals)
-```
-
 ## Count
  - count selected objects and their vertices, print obj if > 60.000
  - also rename obj.data.name to obj.name
