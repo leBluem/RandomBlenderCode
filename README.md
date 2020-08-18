@@ -4,7 +4,7 @@
 # specific for modelling stuff for AssettoCorsa racing simulator
 # this is meant to be copied, modified to your needs (in an external editor maybe)
 # then pasted into blender console mostly (Shift+F4)
-# i dont  know howto do it without 'if True:'
+# i dont  know howto do it without 'if True:' sometimes
 # if not mentioned otherwise: code snippets are for object mode
 ```
 
