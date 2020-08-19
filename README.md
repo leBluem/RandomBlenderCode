@@ -18,14 +18,14 @@ for obj in selected_objs:
     if s.material and s.material.use_nodes:
       for n in s.material.node_tree.nodes:
         if n.type == 'TEX_IMAGE':
-            imageA = str(n.image.filepath).split('\\')
-            if len(imageA)>1:
-              image = imageA[len(imageA)-1]
-            else:
-              image = imageA[0]
-            if not image in obj.name:
-              obj.name = image + obj.name
-              obj.data.name = obj.name
+          imageA = str(n.image.filepath).split('\\')
+          if len(imageA)>1:
+            image = imageA[len(imageA)-1]
+          else:
+            image = imageA[0]
+          if not image in obj.name:
+            obj.name = image + obj.name
+            obj.data.name = obj.name
 ```
 
 ## all normals up
