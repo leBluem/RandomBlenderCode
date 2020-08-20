@@ -33,10 +33,6 @@ for obj in selected_objs:
  - if you dont want/cant use naming conventions to make nice tree shadows
  - makes normals for all selected objects pointing upwards
 ```
-# quirky note: you have to select all vertices in edit mode before 
-# but the snippet itself works in object mode only
-```
-```
 import bpy
 objs = bpy.context.selected_objects
 for o in objs:
