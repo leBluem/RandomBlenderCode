@@ -9,7 +9,7 @@
 ```
 
 ## rename objects by used imagefile
- - take first material, first image used, put its name infront of objectname
+ - for all selected objects: take first material, first image used, put its name infront of objectname
 ```
 import bpy, sys
 selected_objs = bpy.context.selected_objects.copy()
