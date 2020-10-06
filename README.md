@@ -1,7 +1,7 @@
 # RandomBlenderCode
 
 ```
-# specific for modelling stuff for AssettoCorsa racing simulator
+# specific for modelling stuff for AssettoCorsa racing simulator, Blender 2.8
 # this is meant to be copied, modified to your needs (in an external editor maybe)
 # then pasted into blender console mostly (Shift+F4)
 # i dont know howto do it without 'if True:' sometimes
