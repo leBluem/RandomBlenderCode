@@ -99,3 +99,18 @@ if True:
     print(ob.name)
   print(str(i-start) + ' objects renamed')
 ```
+```
+import bpy
+if True:
+  prefix='AC_POBJECT_'
+  postfix=''
+  i=1
+  start=i
+  for ob in bpy.context.selected_objects:
+    ob.name=prefix+str(i)+postfix
+    i+=1
+    if ob.type == 'MESH':
+      ob.data.name=ob.name
+    print(ob.name)
+  print(str(i-start) + ' objects renamed')
+```
