@@ -43,7 +43,10 @@ for o in objs:
   # Set normal for selected vertices
   normals = []
   for v in me.vertices:
-    normals.append((0, 1, 0))
+    if v.select:
+      normals.append((0, 1, 0))
+    else:
+      normals.append(v.normal)
   # make csn's all face up.
   me.normals_split_custom_set_from_vertices(normals)
 ```
