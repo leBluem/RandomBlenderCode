@@ -118,6 +118,7 @@ if True:
   print(str(i-start) + ' objects renamed')
 ```
 ## remove double materials - removes ie. ".00x"; use this as a script in Blender rather than on console only:
+  - source: https://blender.stackexchange.com/a/195474
 ```
 import bpy
 
