@@ -12,7 +12,7 @@
 # KSTREE_GROUP_ks1_0
 # KSTREE_GROUP_ks1_1
 # ...
-# 3. after renaming, those trees will be hidden (ALT+H to unhide later)
+# 3. after renaming, those trees will be hidden (unhide later with ALT+H)
 # 4. repeat from step 1
 #
 # exit localview
