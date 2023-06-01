@@ -21,7 +21,7 @@ import bpy, os, traceback
 
 BASENAME     = 'KSTREE_GROUP_ks'
 THECOUNTER   = 0
-maxObjCount  = 1000
+maxObjCount  = 5000
 maxVertCount = 60000
 doHide       = True
 
