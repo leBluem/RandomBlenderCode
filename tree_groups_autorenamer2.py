@@ -2,7 +2,7 @@
 
 # -select all trees with same material
 # -maybe switch to Local view
-
+#
 # 1. select some trees, only those you want to be in a group
 # 2. run script, it renames them to something like this (free number found automatically)
 # KSTREE_GROUP_ks0_0
@@ -12,9 +12,9 @@
 # KSTREE_GROUP_ks1_0
 # KSTREE_GROUP_ks1_1
 # ...
-# 3. after renaming, those trees will be hidden
+# 3. after renaming, those trees will be hidden (ALT+H to unhide later)
 # 4. repeat from step 1
-
+#
 # exit localview
 
 import bpy, os, traceback
