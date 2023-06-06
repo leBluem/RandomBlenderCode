@@ -67,8 +67,8 @@ for obj in selected_objs:
         print('rename ' + prefix + str(c))
 
         ### rename!!!
-        # obj.name = prefix + str(c)
-        # obj.data.name = obj.name
+        obj.name = prefix + str(c)
+        obj.data.name = obj.name
 
         ### deselect/hide
         if doHide:
