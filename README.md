@@ -38,7 +38,8 @@ import bpy
 objs = bpy.context.selected_objects
 for o in objs:
   me = o.data
-  me.use_auto_smooth = True
+  # only for blender below 3.2 i guess
+  # me.use_auto_smooth = True
   # Normal custom verts on each axis
   me.normals_split_custom_set([(0, 0, 0) for l in me.loops])
   # Set normal for selected vertices
