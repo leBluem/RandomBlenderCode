@@ -30,6 +30,7 @@ for obj in selected_objs:
 
 ## all normals up
  - for Assetto Corsa trees, grass, skyboxes
+ - in edit mode: select all (or verts to change), then in object mode run the script
  - if you dont want/cant use naming conventions to make nice tree shadows
  - makes normals for all selected objects pointing upwards
 ```
