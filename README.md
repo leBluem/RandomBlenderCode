@@ -165,3 +165,27 @@ def remove_all_duplicate_materials():
 
 remove_all_duplicate_materials()
 ```
+
+
+## select objects that have no or more than 1 material
+```
+import bpy, sys
+
+selected_objs = bpy.context.selected_objects.copy()
+bpy.ops.object.select_all(action='DESELECT')
+a=0
+for obj in selected_objs:
+  c=0
+  for s in obj.material_slots:
+    if s.material and s.material.use_nodes:
+      c += 1
+  if c!=1:
+    bpy.data.objects[ obj.name ].select_set(True) # 2.8+
+    bpy.context.view_layer.objects.active = bpy.data.objects[ obj.name ]
+    a+=1
+  if len(obj.data.vertices) >= 60000:
+    bpy.data.objects[ obj.name ].select_set(True) # 2.8+
+    bpy.context.view_layer.objects.active = bpy.data.objects[ obj.name ]
+    a+=1
+print(str(a)+' objs selected.')
+```
