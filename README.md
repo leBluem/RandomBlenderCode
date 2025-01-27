@@ -168,6 +168,7 @@ remove_all_duplicate_materials()
 
 
 ## select objects that have no or more than 1 material
+- or more than 60000 vertices
 - first select all objects to be checked, then run this script
 ```
 import bpy, sys
